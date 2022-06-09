@@ -13,15 +13,16 @@
 </head>
 <body>
 	<h2>짝수일까, 홀수일까</h2>
-	
 	<script>
-		var num = prompt("숫자를 입력하세요.","");
-
-		if(num%2==0){
-			document.write(""+num+"는 짝수입니다. ");
-		} else {
-			document.write(num+"는 홀수입니다.")
-		}
+		var num = prompt("숫자를 입력하시오.", "");
+		
+		// if(num % 2 == 0) {
+		// 	document.write(num + "는(은) 짝수입니다.");
+		// } else {
+		// 	document.write(num + "는(은) 홀수입니다.");
+		// }
+		var result = num % 2 == 0 ? "는(은) 짝수입니다." : "는(은) 홀수입니다.";
+		document.write(num + result);
 	</script>
 </body>
 </html>

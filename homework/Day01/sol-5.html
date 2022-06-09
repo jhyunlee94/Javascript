@@ -4,19 +4,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>웹 브라우저 창에 표시하기</title>
-	<style>
-		h1 {
-			text-align: center;
-		}
-	</style>
+	<title>별찍기1</title>
 </head>
-<body>	
+<body>
 	<script>
-		var name = prompt("내용 입력 : ", "자바스크립트");
-		
-		document.write("<h1>"+name+"</h1>");
-		
+		for(var i = 0; i < 5; i++) {
+			for(var j = 0; j < 5; j++) {
+				if(j <= i) {
+					document.write("*");
+				}
+			}
+			document.write("<br>");
+		}
 	</script>
 </body>
 </html>

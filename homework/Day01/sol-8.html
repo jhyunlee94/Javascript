@@ -17,18 +17,20 @@
 
 
          */
-        var num = 1;
-        var sum = 0;
-        while(true){
-            var data = prompt(num +"번째 숫자 입력");
-            if(data == "end"){
-                alert("입력 종료");
+
+        var result = 0;
+        var i = 1;
+        while (true) {
+            var value = window.prompt(i + "번째 입력 ");
+            if (value == "end") {
+                alert("입력이 종료 되어습니다.");
                 break;
             }
-            sum += parseInt(data);
-            document.write("합 = " + sum + "<br>");
-            num++;
+
+            result += parseInt(value);
+            document.write("현재 합은 = " + result, "<br>");
         }
+
     </script>
 
 </head>
