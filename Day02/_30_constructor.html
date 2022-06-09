@@ -13,8 +13,8 @@
             this.color = color;
             this.price = price;
             this.company = company;
-
-            this.info = function() {
+            //프로토타입을 사용할 때는 객체명을 직접 입력
+            car.prototype.info = function() {
                 document.write("car 색상 : " + this.color, "<br>");
                 document.write("car 가격 : " + this.price, "<br>");
                 document.write("car 제조사 : " + this.company, "<br>");
@@ -24,7 +24,12 @@
         //생성자 함수를 통한 객체 생성
         var kiaCar = new car('red', 3000000, '기아');
         kiaCar.info();
+
+        var hyCar = new car('black', 5000000, '현대');
+        hyCar.info();
+
         console.log(kiaCar);
+        console.log(hyCar);
     </script>
 </body>
 </html>

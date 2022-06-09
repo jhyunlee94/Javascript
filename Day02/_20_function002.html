@@ -8,9 +8,14 @@
 </head>
 <body>
     <script>
-        function login(id, pw){
-            if(id == "bit"){
-                if(pw == "1111"){
+        var userId = prompt("아이디를 입력하세요.");
+        var userPw = "";
+
+        function login(id) {
+            if(id == "bit") {
+                userPw = prompt("비밀번호를 입력하세요.");
+
+                if(userPw == "1111") {
                     document.write(id + "님 환영합니다.");
                 } else {
                     alert("잘못된 비밀번호 입니다.");
@@ -20,10 +25,7 @@
             }
         }
 
-        var userId = prompt("아이디를 입력하세요.");
-        var userPw = prompt("비밀번호를 입력하세요.");
-
-        login(userId, userPw);
+        login(userId);
     </script>
 </body>
 </html>
